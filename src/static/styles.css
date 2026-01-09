@@ -5,6 +5,37 @@
   font-family: Arial, sans-serif;
 }
 
+/* Hide bullet points for participant lists */
+.participants-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.participant-item:last-child {
+  border-bottom: none;
+}
+
+.delete-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  transition: opacity 0.2s;
+}
+
+.delete-icon:hover {
+  opacity: 0.7;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -72,6 +103,40 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+/* Participants section */
+.participants-title {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #283593;
+  font-size: 14px;
+}
+
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin-top: 8px;
+  list-style: none;
+}
+
+.participants-list li {
+  background: linear-gradient(180deg, #eef3ff, #e3edff);
+  color: #1a237e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+/* Empty-state for no participants */
+.no-participants {
+  margin-top: 8px;
+  color: #757575;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .form-group {
