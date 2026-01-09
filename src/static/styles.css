@@ -5,6 +5,37 @@
   font-family: Arial, sans-serif;
 }
 
+/* Hide bullet points for participant lists */
+.participants-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.participant-item:last-child {
+  border-bottom: none;
+}
+
+.delete-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px 8px;
+  transition: opacity 0.2s;
+}
+
+.delete-icon:hover {
+  opacity: 0.7;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
